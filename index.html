@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="index.js"></script>
+<body>
+    <h2>Bài 4</h2>
+    <script>
+        let str = prompt("nhap chuoi")
+        let count = 0
+        for(let i = 0; i < str.length ; i++){
+            count++;
+        }
+        console.log("so ky tu trong chuoi : " + count)
+    </script>
+    <h2>Bài 5</h2>
+    <script>
+        let str1 = prompt("nhap chuoi 1")
+        let str2 = prompt("nhap chuoi 2")
+        let count1 = 0 
+        for(let i = 0; i < str1.length ; i++){
+            if(str1[i] == str2[i])
+                count1++;
+        }
+        if(count1 == str1.length && str1.length == str2.length){
+            console.log("2 chuoi giong nhau")
+        }
+        else
+        console.log("2 chuoi khac nhau")
+     </script>
+     <h2>Bài 6</h2>
+     
+     <script>
+        let arr = []
+        let n = +prompt("nhap so ky tu trong mang")
+        let i = 0
+        while(i < n)
+    {
+        arr.push(prompt("nhap ky tu thu "+ (i+1)))
+        i++
+    }
+        console.log("mang da tao: " + arr)
+    
+        for(let i = 0; i < arr.length ; i++){
+            if(arr[i] == "-")
+                arr[i] = "_"
+        }
+    
+        console.log("mang da sua: " + arr)
+    </script>
+    
+</body>
+</html>
